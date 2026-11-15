@@ -8,4 +8,4 @@ joblib
 jupyterlab
 streamlit
 kagglehub
-
+apache-airflow
