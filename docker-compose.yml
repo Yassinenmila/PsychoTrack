@@ -8,6 +8,8 @@ services:
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
     - ./:/opt/airflow/project
+    environment:
+    - PYTHONPATH=/opt/airflow/project
     command: airflow standalone
   streamlit:
     build: .

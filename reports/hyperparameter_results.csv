@@ -1,0 +1,4 @@
+Model,Best F1-score,Best Parameters
+Logistic Regression,0.753617474774887,"{'model__C': 10, 'model__class_weight': 'balanced', 'model__solver': 'lbfgs'}"
+SVM,0.7467315714714975,"{'model__C': 0.1, 'model__kernel': 'linear'}"
+XGBoost,0.7025866253106924,"{'model__learning_rate': 0.1, 'model__max_depth': 3, 'model__n_estimators': 200, 'model__subsample': 0.8}"

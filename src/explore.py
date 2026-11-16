@@ -1,152 +1,133 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[17]:
-
 
 import pandas as pd
-
-df = pd.read_csv('../data/data-students.csv')
-
-df
-
-
-# In[18]:
-
-
-df.columns
-
-
-# In[19]:
-
-
-df.head()
-
-
-# In[20]:
-
-
-df.shape
-
-
-# In[22]:
-
-
-df.isna().sum()
-
-
-# In[23]:
-
-
-# from sklearn.impute import SimpleImputer
-
-# numeric_columns = df.select_dtypes(include=["int64", "float64"]).columns
-
-# numeric_imputer = SimpleImputer(strategy="median")
-
-# df[numeric_columns] = numeric_imputer.fit_transform(df[numeric_columns])
-
-
-# In[24]:
-
-
-df.isna().sum()
-
-
-# In[25]:
-
-
-df["Diet_Quality"].value_counts(dropna=False)
-
-
-# In[26]:
-
-
-df.isna().sum()
-
-
-# In[27]:
-
-
-df.duplicated().sum()
-
-
-# In[28]:
-
-
-df.describe().T
-
-
-# In[29]:
-
-
-numeric_cols = df.select_dtypes(include="number").columns
-
-for col in numeric_cols:
-
-    Q1 = df[col].quantile(0.25)
-    Q3 = df[col].quantile(0.75)
-
-    IQR = Q3 - Q1
-
-    lower = Q1 - 1.5 * IQR
-    upper = Q3 + 1.5 * IQR
-
-    outliers = df[
-        (df[col] < lower) |
-        (df[col] > upper)
-    ]
-
-    if len(outliers) > 0:
-        print(f"\nColonne : {col}")
-        print(outliers[["Student_ID", col]])
-
-
-# In[30]:
-
-
-df['Mental_Health_Risk'].value_counts()
-
-
-# In[32]:
-
-
 import matplotlib.pyplot as plt
 import seaborn as sns
+from pathlib import Path
+import pandas as pd
 
-plt.figure(figsize=(8, 5))
+# Chemin racine du projet PsychoTrack
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-sns.countplot(data=df, x='Mental_Health_Risk')
+# Chemin du dataset
+DATA_PATH = BASE_DIR / "data" / "data-students.csv"
 
-plt.title("Distribution de la variable cible")
-plt.xlabel("Classes")
-plt.ylabel("Nombre d'observations")
+def run_eda():
 
-plt.show()
+    df = pd.read_csv(DATA_PATH)
 
+    print(df.head())
+    print("Colonnes :", df.columns)
+    print("Dimensions :", df.shape)
+    df.info()
 
-# In[33]:
+    df = df.drop(columns='Student_ID')
 
+    print("\nValeurs manquantes :")
+    print(df.isna().sum())
 
-target = 'Mental_Health_Risk'
+    categorical_cols = df.select_dtypes(include='object').columns
 
-df.groupby(target).mean(numeric_only=True).T
+    print("\nNombre de catégories :")
+    print(df.select_dtypes(include='object').nunique())
 
+    for col in categorical_cols:
+        print(f"\n{col}")
+        print(df[col].value_counts(dropna=False))
+        print(df[col].unique())
 
-# In[34]:
+    print("\nNombre de doublons :")
+    print(df.duplicated().sum())
 
+    print("\nStatistiques descriptives :")
+    print(df.describe().T)
 
-plt.figure(figsize=(10, 6))
+    numeric_cols = df.select_dtypes(include="number").columns
 
-sns.boxplot(
-    data=df,
-    x=target,
-    y='Sleep_Hours'
-)
+    for col in numeric_cols:
 
-plt.title('Relation entre les heures de sommeil et le risque')
-plt.xlabel('Niveau de risque')
-plt.ylabel('Heures de sommeil')
+        Q1 = df[col].quantile(0.25)
+        Q3 = df[col].quantile(0.75)
 
-plt.show()
+        IQR = Q3 - Q1
 
+        lower = Q1 - 1.5 * IQR
+        upper = Q3 + 1.5 * IQR
+
+        outliers = df[
+            (df[col] < lower) |
+            (df[col] > upper)
+        ]
+
+        if len(outliers) > 0:
+            print(f"\nColonne : {col}")
+            print(outliers[col])
+
+    target = 'Mental_Health_Risk'
+
+    print("\nDistribution de la cible :")
+    print(df[target].value_counts())
+
+    print("\nPourcentage des classes :")
+    print(df[target].value_counts(normalize=True) * 100)
+
+    plt.figure(figsize=(8, 5))
+
+    sns.countplot(data=df, x=target)
+
+    plt.title("Distribution de la variable cible")
+    plt.xlabel("Classes")
+    plt.ylabel("Nombre d'observations")
+
+    plt.show()
+
+    print("\nMoyennes selon le risque :")
+    print(df.groupby(target).mean(numeric_only=True).T)
+
+    plt.figure(figsize=(10, 6))
+
+    sns.boxplot(
+        data=df,
+        x=target,
+        y='Sleep_Hours'
+    )
+
+    plt.title('Relation entre les heures de sommeil et le risque')
+    plt.xlabel('Niveau de risque')
+    plt.ylabel('Heures de sommeil')
+
+    plt.show()
+
+    corr = df.select_dtypes(include='number').corr()
+
+    plt.figure(figsize=(14, 10))
+
+    sns.heatmap(
+        corr,
+        annot=True,
+        cmap='coolwarm',
+        fmt='.2f'
+    )
+
+    plt.title("Matrice de corrélation")
+
+    plt.show()
+
+    for col in numeric_cols:
+
+        plt.figure(figsize=(8, 5))
+
+        sns.boxplot(data=df, x=target, y=col)
+
+        plt.title(f'{col} selon le niveau de risque')
+        plt.xlabel('Niveau de risque')
+        plt.ylabel(col)
+
+        plt.show()
+
+    print("\nAnalyse exploratoire terminée !")
+
+    return df
+
+# run_eda()
+import os 
+print(os.listdir())

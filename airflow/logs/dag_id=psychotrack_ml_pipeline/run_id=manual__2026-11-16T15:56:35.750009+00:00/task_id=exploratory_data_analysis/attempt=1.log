@@ -1,0 +1,265 @@
+{"timestamp":"2026-11-16T15:56:38.365968Z","level":"info","event":"::group::Pre Execute","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task","filename":"task_runner.py","lineno":2580}
+{"timestamp":"2026-11-16T15:56:38.378328Z","level":"info","event":"DAG bundles loaded: dags-folder","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":344}
+{"timestamp":"2026-11-16T15:56:38.379087Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":583}
+{"timestamp":"2026-11-16T15:56:39.407290Z","level":"info","event":"['logs', 'dags', 'plugins', 'airflow.db-wal', 'airflow.db', 'project', 'airflow.cfg', 'airflow.db-shm', 'simple_auth_manager_passwords.json.generated']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.578032Z","level":"info","event":"Worker startup parse complete","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","bundle_name":"dags-folder","bundle_version":null,"dag_file":"ml_pipeline.py","dag_id":"psychotrack_ml_pipeline","bundle_prepare_ms":0,"dag_file_parse_ms":1199,"run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1206}
+{"timestamp":"2026-11-16T15:56:39.590543Z","level":"info","event":"::endgroup::","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2400}
+{"timestamp":"2026-11-16T15:56:39.601721Z","level":"info","event":"  Student_ID  Age  ... Previous_Mental_Health_History Mental_Health_Risk","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.601871Z","level":"info","event":"0    STU0001   22  ...                             No               High","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.601943Z","level":"info","event":"1    STU0002   21  ...                             No             Medium","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602003Z","level":"info","event":"2    STU0003   22  ...                             No             Medium","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602058Z","level":"info","event":"3    STU0004   24  ...                            Yes               High","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602113Z","level":"info","event":"4    STU0005   20  ...                             No             Medium","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602169Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602227Z","level":"info","event":"[5 rows x 17 columns]","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602321Z","level":"info","event":"Colonnes : Index(['Student_ID', 'Age', 'Gender', 'Year_of_Study', 'Sleep_Hours',","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602384Z","level":"info","event":"       'Study_Hours_Per_Week', 'GPA', 'Social_Media_Hours',","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602454Z","level":"info","event":"       'Screen_Time_Hours', 'Physical_Activity', 'Financial_Stress',","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602510Z","level":"info","event":"       'Family_Support', 'Attendance_Rate', 'Part_Time_Job', 'Diet_Quality',","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602566Z","level":"info","event":"       'Previous_Mental_Health_History', 'Mental_Health_Risk'],","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602621Z","level":"info","event":"      dtype='str')","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.602676Z","level":"info","event":"Dimensions : (2000, 17)","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.605897Z","level":"info","event":"<class 'pandas.DataFrame'>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.605973Z","level":"info","event":"RangeIndex: 2000 entries, 0 to 1999","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606031Z","level":"info","event":"Data columns (total 17 columns):","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606087Z","level":"info","event":" #   Column                          Non-Null Count  Dtype","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606143Z","level":"info","event":"---  ------                          --------------  -----","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606199Z","level":"info","event":" 0   Student_ID                      2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606256Z","level":"info","event":" 1   Age                             2000 non-null   int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606310Z","level":"info","event":" 2   Gender                          2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606367Z","level":"info","event":" 3   Year_of_Study                   2000 non-null   int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606421Z","level":"info","event":" 4   Sleep_Hours                     1938 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606476Z","level":"info","event":" 5   Study_Hours_Per_Week            2000 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606532Z","level":"info","event":" 6   GPA                             1962 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606587Z","level":"info","event":" 7   Social_Media_Hours              1942 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606640Z","level":"info","event":" 8   Screen_Time_Hours               2000 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606695Z","level":"info","event":" 9   Physical_Activity               2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606756Z","level":"info","event":" 10  Financial_Stress                1909 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606815Z","level":"info","event":" 11  Family_Support                  1946 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606879Z","level":"info","event":" 12  Attendance_Rate                 1953 non-null   float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606944Z","level":"info","event":" 13  Part_Time_Job                   2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.606998Z","level":"info","event":" 14  Diet_Quality                    1931 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607052Z","level":"info","event":" 15  Previous_Mental_Health_History  2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607105Z","level":"info","event":" 16  Mental_Health_Risk              2000 non-null   str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607159Z","level":"info","event":"dtypes: float64(8), int64(2), str(7)","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607213Z","level":"info","event":"memory usage: 328.2 KB","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607291Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607354Z","level":"info","event":"Valeurs manquantes :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607410Z","level":"info","event":"Age                                0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607466Z","level":"info","event":"Gender                             0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607521Z","level":"info","event":"Year_of_Study                      0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607575Z","level":"info","event":"Sleep_Hours                       62","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607629Z","level":"info","event":"Study_Hours_Per_Week               0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607683Z","level":"info","event":"GPA                               38","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607740Z","level":"info","event":"Social_Media_Hours                58","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607797Z","level":"info","event":"Screen_Time_Hours                  0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607852Z","level":"info","event":"Physical_Activity                  0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607907Z","level":"info","event":"Financial_Stress                  91","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.607962Z","level":"info","event":"Family_Support                    54","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608017Z","level":"info","event":"Attendance_Rate                   47","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608073Z","level":"info","event":"Part_Time_Job                      0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608128Z","level":"info","event":"Diet_Quality                      69","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608187Z","level":"info","event":"Previous_Mental_Health_History     0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608243Z","level":"info","event":"Mental_Health_Risk                 0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608297Z","level":"info","event":"dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608352Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608409Z","level":"info","event":"Nombre de catégories :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608513Z","level":"info","event":"Gender                            3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608578Z","level":"info","event":"Physical_Activity                 3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608640Z","level":"info","event":"Part_Time_Job                     2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608718Z","level":"info","event":"Diet_Quality                      3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608781Z","level":"info","event":"Previous_Mental_Health_History    2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608837Z","level":"info","event":"Mental_Health_Risk                3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608901Z","level":"info","event":"dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.608955Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609010Z","level":"info","event":"Gender","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609090Z","level":"info","event":"Gender","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609152Z","level":"info","event":"Female        971","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609232Z","level":"info","event":"Male          932","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609290Z","level":"info","event":"Non-binary     97","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609350Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609406Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609460Z","level":"info","event":"['Male', 'Female', 'Non-binary']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609515Z","level":"info","event":"Length: 3, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609571Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609628Z","level":"info","event":"Physical_Activity","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609707Z","level":"info","event":"Physical_Activity","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609795Z","level":"info","event":"Moderate    906","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609854Z","level":"info","event":"Low         679","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609913Z","level":"info","event":"High        415","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.609970Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610025Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610081Z","level":"info","event":"['Moderate', 'Low', 'High']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610136Z","level":"info","event":"Length: 3, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610191Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610246Z","level":"info","event":"Part_Time_Job","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610302Z","level":"info","event":"Part_Time_Job","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610358Z","level":"info","event":"No     1289","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610413Z","level":"info","event":"Yes     711","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610467Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610522Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610579Z","level":"info","event":"['No', 'Yes']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610634Z","level":"info","event":"Length: 2, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610688Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610745Z","level":"info","event":"Diet_Quality","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610827Z","level":"info","event":"Diet_Quality","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610900Z","level":"info","event":"Average    860","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.610956Z","level":"info","event":"Poor       587","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611009Z","level":"info","event":"Good       484","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611063Z","level":"info","event":"NaN         69","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611116Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611170Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611226Z","level":"info","event":"['Poor', 'Average', nan, 'Good']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611283Z","level":"info","event":"Length: 4, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611337Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611391Z","level":"info","event":"Previous_Mental_Health_History","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611446Z","level":"info","event":"Previous_Mental_Health_History","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611500Z","level":"info","event":"No     1408","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611555Z","level":"info","event":"Yes     592","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611610Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611663Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611716Z","level":"info","event":"['No', 'Yes']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611777Z","level":"info","event":"Length: 2, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611836Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.611927Z","level":"info","event":"Mental_Health_Risk","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612058Z","level":"info","event":"Mental_Health_Risk","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612128Z","level":"info","event":"High      680","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612185Z","level":"info","event":"Medium    660","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612242Z","level":"info","event":"Low       660","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612298Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612354Z","level":"info","event":"<ArrowStringArray>","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612410Z","level":"info","event":"['High', 'Medium', 'Low']","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612467Z","level":"info","event":"Length: 3, dtype: str","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612524Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612581Z","level":"info","event":"Nombre de doublons :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612660Z","level":"info","event":"0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612722Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.612785Z","level":"info","event":"Statistiques descriptives :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.621616Z","level":"info","event":"                       count       mean       std  ...    50%    75%     max","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.621764Z","level":"info","event":"Age                   2000.0  21.131500  2.139275  ...  21.00  23.00   29.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.621840Z","level":"info","event":"Year_of_Study         2000.0   2.630000  1.316802  ...   2.00   4.00    5.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.621920Z","level":"info","event":"Sleep_Hours           1938.0   6.758875  1.127072  ...   6.70   7.60   10.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.621982Z","level":"info","event":"Study_Hours_Per_Week  2000.0  19.997900  5.719274  ...  19.80  24.00   38.30","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622047Z","level":"info","event":"GPA                   1962.0   2.562503  0.343993  ...   2.56   2.79    3.66","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622115Z","level":"info","event":"Social_Media_Hours    1942.0   6.013955  1.153422  ...   6.00   6.70   10.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622175Z","level":"info","event":"Screen_Time_Hours     2000.0   8.548500  1.657571  ...   8.50   9.70   14.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622235Z","level":"info","event":"Financial_Stress      1909.0   5.956260  1.893941  ...   6.10   7.40   10.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622295Z","level":"info","event":"Family_Support        1946.0   6.518345  1.844639  ...   6.70   8.00    9.90","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622356Z","level":"info","event":"Attendance_Rate       1953.0  85.080236  7.224118  ...  85.10  90.00  100.00","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622415Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.622479Z","level":"info","event":"[10 rows x 8 columns]","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623155Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623265Z","level":"info","event":"Colonne : Age","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623368Z","level":"info","event":"209     29","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623440Z","level":"info","event":"478     28","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623503Z","level":"info","event":"1615    28","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623563Z","level":"info","event":"1957    28","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.623623Z","level":"info","event":"Name: Age, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.625385Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.625504Z","level":"info","event":"Colonne : Sleep_Hours","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.625605Z","level":"info","event":"749     3.6","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.625680Z","level":"info","event":"1982    3.3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.625750Z","level":"info","event":"Name: Sleep_Hours, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.626581Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.626654Z","level":"info","event":"Colonne : Study_Hours_Per_Week","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.626766Z","level":"info","event":"340      3.9","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.626908Z","level":"info","event":"453      3.2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.626997Z","level":"info","event":"519      3.6","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627064Z","level":"info","event":"716     38.3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627126Z","level":"info","event":"866      2.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627188Z","level":"info","event":"937     37.5","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627248Z","level":"info","event":"1042     2.7","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627352Z","level":"info","event":"Name: Study_Hours_Per_Week, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627832Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.627912Z","level":"info","event":"Colonne : GPA","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628034Z","level":"info","event":"358     3.60","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628105Z","level":"info","event":"448     1.50","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628168Z","level":"info","event":"534     3.66","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628229Z","level":"info","event":"881     3.53","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628289Z","level":"info","event":"937     3.64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628350Z","level":"info","event":"1299    3.57","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628411Z","level":"info","event":"1320    3.51","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628471Z","level":"info","event":"1541    1.60","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628531Z","level":"info","event":"1923    3.51","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.628591Z","level":"info","event":"Name: GPA, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629096Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629170Z","level":"info","event":"Colonne : Social_Media_Hours","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629330Z","level":"info","event":"22       2.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629403Z","level":"info","event":"180      9.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629467Z","level":"info","event":"217      2.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629530Z","level":"info","event":"268      2.1","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629590Z","level":"info","event":"296      9.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629651Z","level":"info","event":"328      3.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629712Z","level":"info","event":"453     10.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629778Z","level":"info","event":"470      9.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629841Z","level":"info","event":"485      2.9","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629901Z","level":"info","event":"747      9.1","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.629962Z","level":"info","event":"768      9.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630022Z","level":"info","event":"793      2.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630083Z","level":"info","event":"821      9.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630143Z","level":"info","event":"1027     9.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630205Z","level":"info","event":"1087    10.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630265Z","level":"info","event":"1094     9.3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630325Z","level":"info","event":"1435     9.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630385Z","level":"info","event":"1550     9.2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630444Z","level":"info","event":"1636     9.5","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630504Z","level":"info","event":"1956     9.2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630564Z","level":"info","event":"Name: Social_Media_Hours, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.630647Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631059Z","level":"info","event":"Colonne : Screen_Time_Hours","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631132Z","level":"info","event":"268      3.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631196Z","level":"info","event":"485      3.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631258Z","level":"info","event":"1030     3.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631318Z","level":"info","event":"1169     3.3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631380Z","level":"info","event":"1466     3.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631445Z","level":"info","event":"1487    13.6","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631507Z","level":"info","event":"1754    14.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.631568Z","level":"info","event":"Name: Screen_Time_Hours, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.633672Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.633839Z","level":"info","event":"Colonne : Attendance_Rate","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634004Z","level":"info","event":"36      61.1","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634122Z","level":"info","event":"277     62.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634232Z","level":"info","event":"523     62.5","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634352Z","level":"info","event":"539     62.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634463Z","level":"info","event":"906     62.5","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634577Z","level":"info","event":"1057    63.2","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634643Z","level":"info","event":"1126    65.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634704Z","level":"info","event":"1249    65.3","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634774Z","level":"info","event":"1273    54.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634835Z","level":"info","event":"1407    61.8","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634897Z","level":"info","event":"1645    64.4","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.634957Z","level":"info","event":"1721    61.9","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635017Z","level":"info","event":"Name: Attendance_Rate, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635079Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635142Z","level":"info","event":"Distribution de la cible :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635233Z","level":"info","event":"Mental_Health_Risk","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635301Z","level":"info","event":"High      680","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635364Z","level":"info","event":"Medium    660","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635425Z","level":"info","event":"Low       660","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635486Z","level":"info","event":"Name: count, dtype: int64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635547Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635609Z","level":"info","event":"Pourcentage des classes :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635680Z","level":"info","event":"Mental_Health_Risk","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635747Z","level":"info","event":"High      34.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635809Z","level":"info","event":"Medium    33.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635874Z","level":"info","event":"Low       33.0","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.635936Z","level":"info","event":"Name: proportion, dtype: float64","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.659963Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.660090Z","level":"info","event":"Moyennes selon le risque :","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.661855Z","level":"info","event":"Mental_Health_Risk         High        Low     Medium","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.661960Z","level":"info","event":"Age                   21.138235  21.112121  21.143939","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662028Z","level":"info","event":"Year_of_Study          2.360294   2.895455   2.642424","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662090Z","level":"info","event":"Sleep_Hours            6.035258   7.523648   6.729384","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662150Z","level":"info","event":"Study_Hours_Per_Week  18.362794  21.699697  19.980758","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662210Z","level":"info","event":"GPA                    2.421604   2.718176   2.552099","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662270Z","level":"info","event":"Social_Media_Hours     6.345770   5.762773   5.922414","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662329Z","level":"info","event":"Screen_Time_Hours      8.960000   8.257424   8.415606","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662388Z","level":"info","event":"Financial_Stress       6.689697   5.243930   5.895024","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662447Z","level":"info","event":"Family_Support         5.956212   7.088438   6.527864","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:39.662506Z","level":"info","event":"Attendance_Rate       83.767117  86.332293  85.191641","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:40.006050Z","level":"info","event":"","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:40.006228Z","level":"info","event":"Analyse exploratoire terminée !","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","logger":"task.stdout"}
+{"timestamp":"2026-11-16T15:56:40.008316Z","level":"info","event":"Done. Returned value was:       Age  Gender  ... Previous_Mental_Health_History Mental_Health_Risk\n0      22    Male  ...                             No               High\n1      21    Male  ...                             No             Medium\n2      22    Male  ...                             No             Medium\n3      24    Male  ...                            Yes               High\n4      20  Female  ...                             No             Medium\n...   ...     ...  ...                            ...                ...\n1995   23    Male  ...                             No             Medium\n1996   21    Male  ...                             No               High\n1997   19  Female  ...                             No               High\n1998   21    Male  ...                             No                Low\n1999   19  Female  ...                             No             Medium\n\n[2000 rows x 16 columns]","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-11-16T15:56:40.008419Z","level":"info","event":"::group::Post Execute","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1674}
+{"timestamp":"2026-11-16T15:56:40.008530Z","level":"info","event":"Pushing xcom","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","ti":"RuntimeTaskInstance(id=UUID('01a1e513-1630-7712-bc31-8fb1148b173d'), task_id='exploratory_data_analysis', dag_id='psychotrack_ml_pipeline', run_id='manual__2026-11-16T15:56:35.750009+00:00', try_number=1, dag_version_id=UUID('01a1e4ee-51da-7c68-8ead-4d65efb4c901'), map_index=-1, region_id=UUID('00000000-0000-0000-0000-000000000000'), region_index=-1, hostname='ab914fd68df1', context_carrier={'traceparent': '00-8515afac281023b67f730c33f85c0046-3a60e7aeee7c7181-00'}, queue='default', task=<Task(PythonOperator): exploratory_data_analysis>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 11, 16, 15, 56, 38, 375489, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2448}
+{"timestamp":"2026-11-16T15:56:40.034672Z","level":"info","event":"::endgroup::","ti_id":"01a1e513-1630-7712-bc31-8fb1148b173d","run_id":"manual__2026-11-16T15:56:35.750009+00:00","task_id":"exploratory_data_analysis","dag_id":"psychotrack_ml_pipeline","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2547}
